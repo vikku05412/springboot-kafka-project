@@ -21,7 +21,7 @@ public class OrderEventConsumer {
 		
 		order.setProductid(event.getProductId());
 		order.setQuantity(event.getQuantity());
-		order.setStatus(order.getStatus());
+		order.setStatus("CREATED");
 		
 		orderRepository.save(order);
 
